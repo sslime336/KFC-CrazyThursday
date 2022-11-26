@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	kfc "github.com/sslime336/kfct"
+	kfc "github.com/sslime336/KFC-CrazyThursday"
 )
 
 func TestGetKFCPos(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/sslime336/kfct/pos"
+	"github.com/sslime336/KFC-CrazyThursday/pos"
 )
 
 type KFCPosition struct {
