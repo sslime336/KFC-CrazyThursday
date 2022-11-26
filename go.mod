@@ -1,4 +1,4 @@
-module github.com/sslime336/kfct
+module github.com/sslime336/KFC-CrazyThursday
 
 go 1.19
 
