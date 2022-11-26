@@ -31,79 +31,39 @@ type Point struct {
 // KFCPosResponse 通过高德获取的附近肯德基位置
 type KFCPosResponse struct {
 	Suggestion Suggestion `json:"suggestion"`
-	Count      string     `json:"count"`
-	Infocode   string     `json:"infocode"`
-	Pois       []Pois     `json:"pois"`
-	Status     string     `json:"status"`
-	Info       string     `json:"info"`
+	Count      string     `json:"count"`     
+	Infocode   string     `json:"infocode"`  
+	Pois       []Pois     `json:"pois"`      
+	Status     string     `json:"status"`    
+	Info       string     `json:"info"`      
 }
 
 type Pois struct {
-	Parent       *Childtype    `json:"parent"`
-	Distance     string        `json:"distance"`
-	Pcode        string        `json:"pcode"`
-	Importance   []interface{} `json:"importance"`
-	BizEXT       BizEXT        `json:"biz_ext"`
-	Recommend    string        `json:"recommend"`
-	Type         string        `json:"type"`
-	Photos       []Photo       `json:"photos"`
-	DiscountNum  string        `json:"discount_num"`
-	Gridcode     string        `json:"gridcode"`
-	Typecode     string        `json:"typecode"`
-	Shopinfo     string        `json:"shopinfo"`
-	Poiweight    []interface{} `json:"poiweight"`
-	Citycode     string        `json:"citycode"`
-	Adname       string        `json:"adname"`
-	Children     []interface{} `json:"children"`
-	Alias        []interface{} `json:"alias"`
-	Tel          string        `json:"tel"`
-	ID           string        `json:"id"`
-	Tag          *Childtype    `json:"tag"`
-	Event        []interface{} `json:"event"`
-	EntrLocation *Childtype    `json:"entr_location"`
-	IndoorMap    string        `json:"indoor_map"`
-	Email        []interface{} `json:"email"`
-	Timestamp    string        `json:"timestamp"`
-	Website      []interface{} `json:"website"`
-	Address      string        `json:"address"`
-	Adcode       string        `json:"adcode"`
-	Pname        string        `json:"pname"`
-	BizType      string        `json:"biz_type"`
-	Cityname     string        `json:"cityname"`
-	Postcode     []interface{} `json:"postcode"`
-	Match        string        `json:"match"`
-	BusinessArea string        `json:"business_area"`
-	IndoorData   IndoorData    `json:"indoor_data"`
-	Childtype    *Childtype    `json:"childtype"`
-	ExitLocation []interface{} `json:"exit_location"`
-	Name         string        `json:"name"`
-	Location     string        `json:"location"`
-	Shopid       []interface{} `json:"shopid"`
-	NaviPoiid    []interface{} `json:"navi_poiid"`
-	GroupbuyNum  string        `json:"groupbuy_num"`
-}
-
-type BizEXT struct {
-	Cost         string `json:"cost"`
-	Rating       string `json:"rating"`
-	MealOrdering string `json:"meal_ordering"`
-}
-
-type IndoorData struct {
-	Cmsid     *Childtype `json:"cmsid"`
-	Truefloor *Childtype `json:"truefloor"`
-	Cpid      *Childtype `json:"cpid"`
-	Floor     *Childtype `json:"floor"`
-}
-
-type Photo struct {
-	Title []interface{} `json:"title"`
-	URL   string        `json:"url"`
+	Parent     *Childtype    `json:"parent"`    
+	Address    string        `json:"address"`   
+	Distance   string        `json:"distance"`  
+	Pname      string        `json:"pname"`     
+	Importance []interface{} `json:"importance"`
+	BizEXT     []interface{} `json:"biz_ext"`   
+	BizType    string        `json:"biz_type"`  
+	Cityname   string        `json:"cityname"`  
+	Type       string        `json:"type"`      
+	Photos     []interface{} `json:"photos"`    
+	Typecode   string        `json:"typecode"`  
+	Shopinfo   string        `json:"shopinfo"`  
+	Poiweight  []interface{} `json:"poiweight"` 
+	Childtype  *Childtype    `json:"childtype"` 
+	Adname     string        `json:"adname"`    
+	Name       string        `json:"name"`      
+	Location   string        `json:"location"`  
+	Tel        string        `json:"tel"`       
+	Shopid     []interface{} `json:"shopid"`    
+	ID         string        `json:"id"`        
 }
 
 type Suggestion struct {
 	Keywords []interface{} `json:"keywords"`
-	Cities   []interface{} `json:"cities"`
+	Cities   []interface{} `json:"cities"`  
 }
 
 type Childtype struct {
